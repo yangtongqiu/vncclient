@@ -30,15 +30,16 @@
 #include "rfbclientwidgetcls.h"
 #include "vncclientwidget2cls.h"
 #include "vnc_connecttion.h"
+#include "vnc_connecttion.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    //vnc_connecttion w;
-    //w.show();
+    vnc_connecttion w;
+    w.show();
     vncclientwidget2cls vnc;
 
-    vnc.connectVNCTCP("192.168.1.158", 5901);
-    vnc.show();
+    //vnc.connectVNCTCP(host_add,port_num);
+    //vnc.show();
     return a.exec();
 }
